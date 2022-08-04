@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 18px;
+} */
+
+body {
+    font-size: 18px;
+    font-family: "Barlow";
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---------------------------HEADER-------------------------- */
+
+header {
+    background-image: url("/images/desktop/image-header.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header nav ul a {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+header .contact {
+    color: hsl(212, 27%, 19%);
+    padding: 15px 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 17px;
+}
+
+header h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    margin-top: 70px;
+    font-size: 3.4em;
+    letter-spacing: 11px;
+    font-weight: 900;
+    text-align: center;
+}
+
+header .contaainer {
+    position: relative;
+}
+
+.arrow-down {
+    position: absolute;
+    right: 49%;
+    top: 43%;
+}
+
+/* ---------------------------------MAIN--------------------------------------- */
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+main img {
+    width: 100%;
+}
+
+.cards img {
+    max-width: 100%;
+}
+
+.card h2, .card a {
+    font-family: "Fraunces";
+}
+
+.card h2 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 140px;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 27px;
+}
+
+.card p {
+    color: hsl(213, 9%, 39%);
+    width: 69%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.card a {
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: hsl(212, 27%, 19%);
+    display: block;
+    width: 69%;
+    margin: 0 auto;
+}
+
+.cards:nth-child(2) {
+    margin-top: -5px;
+}
+.card:nth-child(2) h2 {
+    font-size: 2.6rem;
+}
+
+.card:nth-child(2) p {
+    font-size: 18.6px;
+}
+
+.cards:nth-child(3) {
+    margin-top: -5px;
+}
+
+.cards:nth-child(3) .card {
+    position: relative;
+}
+
+.cards:nth-child(3) .card .text {
+    position: absolute;
+    bottom: 10px;
+}
+
+.cards:nth-child(3) .card .text h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Fraunces";
+}
+
+.cards:nth-child(3) .card .text p {
+    margin-top: 20px;
+    line-height: 1.6;
+    width: 52%;
+    text-align: center;
+}
+
+
+/* -----------------------------------------TESTIMONIALS------------------------------------------- */
+
+.testimonialss {
+    margin-top: 150px;
+}
+
+.testimonialss h2 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial img {
+    width: 15%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.testimonial p, .testimonial h4 {
+    text-align: center;
+}
+
+.testimonial > p {
+    color: hsl(212, 27%, 19%);
+    line-height: 1.5;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+
+/* ----------------------------------FOOTER------------------------- */
+footer {
+    background-color: #6CBBAB;
+    margin-top: 100px;
+}
+
+.flex-container {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.flex-container img {
+    width: 100%;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 900;
+    color: #046e59;
+}
+
+footer ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer ul a {
+    font-size: 20px;
+    color:#046e59;
+}
+
+.icons {
+    margin-top: 70px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
